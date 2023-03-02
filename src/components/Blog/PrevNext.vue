@@ -37,23 +37,23 @@ export default Vue.extend({
     class="grid gap-6 grid-cols-1 md:grid-cols-2 dark:text-gray-200"
   >
     <div>
-      <Title :padding="false" lang="tr">Önceki Gönderi</Title>
+      <Title :padding="false" lang="tr">Previous Post</Title>
 
       <SmartLink v-if="prev" :href="`/blog/${prev.slug}`">
         <h5>{{ prev.title }}</h5>
       </SmartLink>
 
-      <h5 v-else class="line-through">Daha Eski Bir Gönderi Yok</h5>
+      <h5 v-else class="line-through">No Older Post</h5>
     </div>
 
     <div class="text-right">
-      <Title :padding="false" lang="tr">Sonraki Gönderi</Title>
+      <Title :padding="false" lang="tr">Next Post</Title>
 
       <SmartLink v-if="next" :href="`/blog/${next.slug}`">
         <h5>{{ next.title }}</h5>
       </SmartLink>
 
-      <h5 v-else class="line-through">Daha Yeni Bir Gönderi Yok</h5>
+      <h5 v-else class="line-through">No Newer Posts</h5>
     </div>
   </div>
 </template>
@@ -65,7 +65,7 @@ div {
   }
 
   h5 {
-    @apply font-light text-xl text-gray-700 truncate dark:text-neutral-300;
+    @apply font-light text-xl text-gray-700 truncate dark:text-slate-300;
   }
 }
 </style>

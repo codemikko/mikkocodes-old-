@@ -61,8 +61,8 @@ export default Vue.extend({
       'p-2': tight === true,
       'p-4': tight === false,
       'cursor-pointer': cursor === true,
-      'bg-gray-100 dark:bg-neutral-800/40': elevated === true,
-      'hover:bg-gray-100 dark:hover:bg-neutral-800/40': elevated === false,
+      'bg-gray-100 dark:bg-slate-800/40': elevated === true,
+      'hover:bg-gray-100 dark:hover:bg-slate-800/40': elevated === false,
       'items-center flex space-x-4': $slots.icon || $slots['icon-left'],
       'justify-between': $slots.icon && !$slots['icon-left'],
     }"
@@ -75,14 +75,14 @@ export default Vue.extend({
     <div class="overflow-x-hidden">
       <h2
         v-if="title"
-        class="font-medium text-gray-700 truncate dark:text-neutral-100"
+        class="font-medium text-gray-700 truncate dark:text-slate-100"
       >
         {{ title }}
       </h2>
 
       <p
         v-if="$slots.default"
-        class="text-neutral-500"
+        class="text-slate-500"
         :class="truncate === true && 'line-clamp-2'"
       >
         <slot />

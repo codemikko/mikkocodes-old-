@@ -75,7 +75,7 @@ export default Vue.extend({
         /* Quick Links */
         {
           title: "GitHub",
-          href: "https://github.com/eggsy",
+          href: "https://github.com/codemikko",
           icon: "IconBrand",
           iconProps: {
             brand: "github",
@@ -84,7 +84,7 @@ export default Vue.extend({
         },
         {
           title: "Twitter",
-          href: "https://twitter.com/eggsydev",
+          href: "https://twitter.com/codemikko",
           icon: "IconBrand",
           iconProps: {
             brand: "twitter",
@@ -186,7 +186,7 @@ export default Vue.extend({
       @click="() => toggleVisibility(false)"
     >
       <div
-        class="lg:h-1/2 lg:w-1/2 w-full h-full overflow-hidden scrollbar relative lg:rounded-lg lg:mt-24 ring-1 ring-white/10 dark:bg-neutral-900 bg-gray-200 text-neutral-900 dark:text-white"
+        class="lg:h-1/2 lg:w-1/2 w-full h-full overflow-hidden scrollbar relative lg:rounded-lg lg:mt-24 ring-1 ring-white/10 dark:bg-slate-900 bg-gray-200 text-slate-900 dark:text-white"
         @click="(e) => e.stopPropagation()"
       >
         <!-- Search bar -->
@@ -194,20 +194,20 @@ export default Vue.extend({
           <div
             class="absolute pl-3 pointer-events-none inset-0 flex items-center"
           >
-            <IconSearch class="h-5 w-5 text-neutral-500" />
+            <IconSearch class="h-5 w-5 text-slate-500" />
           </div>
 
           <input
             ref="searchInput"
             v-model="search"
-            class="appearance-none pl-10 text-neutral-600 dark:text-white/60 pr-4 placeholder-neutral-500 text-sm focus:outline-none lg:rounded-t-lg w-full h-full bg-gray-300 dark:bg-neutral-800"
+            class="appearance-none pl-10 text-slate-600 dark:text-white/60 pr-4 placeholder-slate-500 text-sm focus:outline-none lg:rounded-t-lg w-full h-full bg-gray-300 dark:bg-slate-800"
             placeholder="Search"
           />
         </div>
 
         <!-- Content -->
         <div
-          class="pt-13 space-y-4 pb-3.5 px-1.5 overflow-y-auto h-full text-neutral-600 space-y-1"
+          class="pt-13 space-y-4 pb-3.5 px-1.5 overflow-y-auto h-full text-slate-600 space-y-1"
         >
           <div
             v-for="(item, index) in getCategoriesFiltered"

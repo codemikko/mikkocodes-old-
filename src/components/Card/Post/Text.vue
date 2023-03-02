@@ -23,7 +23,7 @@ export default Vue.extend({
       name: 'blog-slug',
       params: { slug: meta.slug },
     }"
-    class="rounded-lg cursor-pointer flex space-x-4 p-3 transition-colors focus-ring items-center md:px-4 hover:bg-gray-200/40 dark:hover:bg-neutral-800/40"
+    class="rounded-lg cursor-pointer flex space-x-4 p-3 transition-colors focus-ring items-center md:px-4 hover:bg-gray-200/40 dark:hover:bg-slate-800/40"
   >
     <SmartImage
       :src="meta.image"
@@ -35,7 +35,7 @@ export default Vue.extend({
         {{ meta.title }}
       </h2>
 
-      <p class="text-neutral-500 line-clamp-2">
+      <p class="text-slate-500 line-clamp-2">
         {{ meta.description }}
       </p>
     </div>

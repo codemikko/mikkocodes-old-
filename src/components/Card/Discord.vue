@@ -249,7 +249,7 @@ export default Vue.extend({
 <template>
   <div
     v-if="componentReady"
-    class="rounded-md bg-[#6c82cf] w-full py-4 px-6 overflow-x-hidden dark:bg-neutral-800/40"
+    class="rounded-md bg-[#6c82cf] w-full py-4 px-6 overflow-x-hidden dark:bg-slate-800/40"
   >
     <div class="pt-2">
       <h1 class="font-semibold text-xs text-white uppercase dark:text-gray-100">

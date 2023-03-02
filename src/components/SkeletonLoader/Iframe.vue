@@ -18,7 +18,7 @@ export default {
 <template>
   <div
     :class="{
-      'bg-gray-100 dark:bg-neutral-800 rounded animate-pulse':
+      'bg-gray-100 dark:bg-slate-800 rounded animate-pulse':
         itemLoaded === false,
     }"
   >

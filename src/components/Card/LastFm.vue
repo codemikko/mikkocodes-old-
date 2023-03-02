@@ -38,7 +38,7 @@ export default Vue.extend({
   <SmartLink
     :href="url"
     :title="name"
-    class="rounded-md flex space-x-4 p-4 transition-colors focus-ring overflow-x-hidden items-center hover:bg-gray-100 dark:hover:bg-neutral-800"
+    class="rounded-md flex space-x-4 p-4 transition-colors focus-ring overflow-x-hidden items-center hover:bg-gray-100 dark:hover:bg-slate-800"
     :class="{
       'justify-between': plays !== null,
     }"
@@ -53,12 +53,12 @@ export default Vue.extend({
           title="Playing now..."
           class="rounded-md flex bg-black/75 inset-0 items-center justify-center absolute"
         >
-          <IconPlay class="h-6 text-neutral-300 w-6" />
+          <IconPlay class="h-6 text-slate-300 w-6" />
         </div>
       </div>
 
       <div class="flex flex-col truncate">
-        <span class="text-neutral-700 truncate dark:text-neutral-400">{{
+        <span class="text-slate-700 truncate dark:text-slate-400">{{
           name
         }}</span>
         <span v-if="artist" class="text-xs truncate">by {{ artist }}</span>

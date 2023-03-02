@@ -73,7 +73,7 @@ export default Vue.extend({
           classes = "text-gray-100 bg-black"
           break
         default:
-          classes = "bg-gray-200 dark:bg-neutral-800"
+          classes = "bg-gray-200 dark:bg-slate-800"
           break
       }
 
@@ -102,10 +102,10 @@ export default Vue.extend({
 
       <div
         v-tippy="{
-          content: `${rating}/${max} puan`,
+          content: `${rating}/${max} point`,
           placement: 'top',
         }"
-        class="rounded-md cursor-default flex font-medium bg-gray-200 flex-shrink-0 text-sm p-1 text-gray-700 w-12 items-center justify-center dark:(bg-neutral-800 text-gray-200) focus:outline-none"
+        class="rounded-md cursor-default flex font-medium bg-gray-200 flex-shrink-0 text-sm p-1 text-gray-700 w-12 items-center justify-center dark:(bg-slate-800 text-gray-200) focus:outline-none"
       >
         {{ rating }} P
       </div>

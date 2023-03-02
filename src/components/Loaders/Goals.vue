@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-12 px-4 text-gray-500 dark:text-neutral-600">
+  <div class="space-y-12 px-4 text-gray-500 dark:text-slate-600">
     <header class="space-y-2 my-12">
       <SkeletonLoader class="h-10 w-1/6" />
       <SkeletonLoader class="h-5 w-4/12" />

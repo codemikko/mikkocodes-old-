@@ -49,15 +49,15 @@ export default Vue.extend({
     @enter="toggleBackground"
   >
     <div
-      class="px-4 text-gray-500 cursor-default hover:bg-gray-200 dark:hover:bg-neutral-800/40 rounded-lg transition-colors overflow-hidden dark:text-neutral-600"
+      class="px-4 text-gray-500 cursor-default hover:bg-gray-200 dark:hover:bg-slate-800/40 rounded-lg transition-colors overflow-hidden dark:text-slate-600"
       :class="{
-        'bg-gray-200 dark:bg-neutral-800/40': hasBackground,
+        'bg-gray-200 dark:bg-slate-800/40': hasBackground,
       }"
     >
       <div class="flex space-x-2 items-center justify-between">
         <SmartLink
           :href="url"
-          class="text-gray-800 dark:text-neutral-200 hover:underline"
+          class="text-gray-800 dark:text-slate-200 hover:underline"
           blank
         >
           <h3 class="text-lg">{{ title }}</h3>

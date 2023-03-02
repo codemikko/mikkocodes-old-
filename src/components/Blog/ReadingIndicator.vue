@@ -85,17 +85,17 @@ export default Vue.extend({
       v-show="isElementVisible"
       v-tippy="{
         content:
-          getPercentLeftBottom === 100 ? 'Tüm yazı okundu!' : 'Okuma oranı',
+          getPercentLeftBottom === 100 ? 'The entire article has been read!' : 'Reading rate',
       }"
     >
       <div
-        class="rounded-md bg-gray-200 h-40 w-4 hidden relative md:block dark:bg-neutral-800"
+        class="rounded-md bg-gray-200 h-40 w-4 hidden relative md:block dark:bg-slate-800"
       >
         <div
           class="rounded-md inset-x-0 transition bottom-0 absolute"
           :class="{
             'bg-green-500': getPercentLeftBottom === 100,
-            'bg-gray-300 dark:bg-neutral-600': getPercentLeftBottom < 100,
+            'bg-gray-300 dark:bg-slate-600': getPercentLeftBottom < 100,
           }"
           :style="{ height: `${getPercentLeftBottom}%` }"
         />

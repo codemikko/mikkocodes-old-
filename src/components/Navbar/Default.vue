@@ -9,8 +9,8 @@ export default Vue.extend({
     getTargetLink(): string {
       const path = this.$route.path
 
-      if (path !== "/projects/premid" && path.startsWith("/projects/premid"))
-        return "/projects/premid"
+      if (path !== "/projects/Retrieve-Github-Commits" && path.startsWith("/projects/Retrieve-Github-Commits"))
+        return "/projects/Retrieve-Github-Commits"
       else return "/"
     },
   },
@@ -27,7 +27,7 @@ export default Vue.extend({
             class="rounded-md bg-gray-100 ring-black transition-transform ring-2 ring-opacity-5 sm:transform hover:-rotate-6"
             width="100"
             height="100"
-            title="EGGSY's Website"
+            title="<MikkoCodes />"
           />
         </SmartLink>
 

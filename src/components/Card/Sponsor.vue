@@ -22,7 +22,7 @@ export default Vue.extend({
 <template>
   <SmartLink
     :href="`https://github.com/${sponsor.login}`"
-    class="flex space-x-3 px-4 py-1.5 rounded-md transition-colors hover:bg-gray-200/40 dark:hover:bg-neutral-800/40 select-none items-center"
+    class="flex space-x-3 px-4 py-1.5 rounded-md transition-colors hover:bg-gray-200/40 dark:hover:bg-slate-800/40 select-none items-center"
     blank
   >
     <SmartImage

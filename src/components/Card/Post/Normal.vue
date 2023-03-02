@@ -58,7 +58,7 @@ export default Vue.extend({
           {{ meta.title }}
         </h2>
 
-        <p class="text-neutral-500 line-clamp-2">
+        <p class="text-slate-500 line-clamp-2">
           {{ meta.description }}
         </p>
       </div>
