@@ -58,6 +58,9 @@ const Config: NuxtConfig = {
   // Modules
   vite,
   feed,
+
+  // Add build directory
+  buildDir: "build",
 }
 
 export default Config
