@@ -58,8 +58,8 @@ export default Vue.extend({
     },
     getVariantClasses(): string {
       if (this.variant === "github")
-        return "bg-gray-200 text-black bg-opacity-100 dark:(bg-neutral-800 text-white)  hover:bg-opacity-60"
-      return "text-gray-700 dark:text-neutral-400"
+        return "bg-gray-200 text-black bg-opacity-100 dark:(bg-slate-800 text-white)  hover:bg-opacity-60"
+      return "text-gray-700 dark:text-slate-400"
     },
   },
 })
@@ -88,9 +88,9 @@ export default Vue.extend({
       // Rest
       'line-through': disabled === true,
       'flex items-center space-x-2': $slots.icon,
-      'dark:hover:bg-neutral-800 hover:bg-gray-200':
+      'dark:hover:bg-slate-800 hover:bg-gray-200':
         variant === 'primary' && elevated === false && disabled === false,
-      'bg-gray-200 hover:bg-gray-200/40 dark:(bg-neutral-800 hover:bg-neutral-800/40)':
+      'bg-gray-200 hover:bg-gray-200/40 dark:(bg-slate-800 hover:bg-slate-800/40)':
         variant === 'primary' && elevated === true && disabled === false,
     }"
   >
