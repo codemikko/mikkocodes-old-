@@ -3,8 +3,8 @@ import Vue from "vue"
 
 export default Vue.extend({
   head() {
-    let string = "eggsy.xyz"
-    if (this.routeIsBlog) string = "eggsy.xyz - blog"
+    let string = "HelloMikko"
+    if (this.routeIsBlog) string = "HelloMikko - blog"
 
     return {
       titleTemplate: `%s - ${string}`,
@@ -33,9 +33,9 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-neutral-900">
+  <div class="min-h-screen bg-gray-50 dark:bg-slate-900">
     <!-- Colored top bar -->
-    <div class="bg-indigo-500 w-full py-1 dark:bg-neutral-700" />
+    <div class="bg-indigo-500 w-full py-1 dark:bg-slate-700" />
 
     <!-- Navbar -->
     <transition name="fade" mode="out-in">
@@ -52,7 +52,7 @@ export default Vue.extend({
     <Footer />
 
     <!-- Colored bottom bar -->
-    <div class="bg-indigo-500 w-full py-1 dark:bg-neutral-700" />
+    <div class="bg-indigo-500 w-full py-1 dark:bg-slate-700" />
 
     <!-- Command Palette -->
     <CommandPalette />

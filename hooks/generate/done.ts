@@ -35,7 +35,7 @@ export const generateDone = async (generator: any) => {
     const metaImage = await generateImage({
       title,
       description,
-      subtitles: [postDate, `${readingTime} dakika okuma`, `#${tags[0]}`],
+      subtitles: [postDate, `${readingTime} minute reading`, `#${tags[0]}`],
     })
 
     if (!existsSync(folderPath)) mkdirSync(folderPath)
