@@ -1,3 +1,4 @@
+<!-- TODO: Fix this page -->
 <script lang="ts">
 import Vue from "vue"
 
@@ -46,7 +47,7 @@ export default Vue.extend({
   fetchOnServer: false,
   async fetch() {
     const { data } = await this.$axios.get(
-      "https://raw.githubusercontent.com/eggsy/.github/main/sponsors.json"
+      "https://raw.githubusercontent.com/codemikko/.github/main/sponsors.json"
     )
 
     this.sponsors = data
@@ -62,12 +63,12 @@ export default Vue.extend({
         title,
         description,
         keywords: "donate",
-        url: "https://eggsy.xyz/donate",
+        url: "https://mikko.codes/donate",
       }),
       link: [
         {
           rel: "canonical",
-          href: "https://eggsy.xyz/donate",
+          href: "https://mikko.codes/donate",
         },
       ],
     }
@@ -102,9 +103,9 @@ export default Vue.extend({
 
 <template>
   <div class="py-4">
-    <div class="space-y-12 text-gray-500 sm:w-9/12 dark:text-neutral-600">
+    <div class="space-y-12 text-gray-500 sm:w-9/12 dark:text-slate-600">
       <header class="space-y-2 my-12 px-4">
-        <h1 class="text-gray-700 text-4xl dark:text-neutral-300">Donate</h1>
+        <h1 class="text-gray-700 text-4xl dark:text-slate-300">Donate</h1>
 
         <p>
           If you like my projects and/or what I do and you want to contribute,
@@ -114,7 +115,7 @@ export default Vue.extend({
 
         <p class="text-xs">
           P.S. Use "<span class="border-b border-black/10 dark:border-white/10"
-            >Abdulbaki Dursun</span
+            >Hello Mikko</span
           >" as the name of your transactions.
         </p>
       </header>
@@ -147,7 +148,7 @@ export default Vue.extend({
 
       <section class="space-y-4">
         <SmartLink
-          href="https://github.com/sponsors/eggsy"
+          href="https://github.com/sponsors/codemikko"
           class="flex space-x-2 justify-between mx-4 items-center"
           blank
         >
@@ -204,30 +205,30 @@ export default Vue.extend({
             :key="`account-${index}`"
             class="flex h-full items-center"
           >
-            <div class="rounded-l bg-gray-200/75 dark:bg-neutral-800/50">
+            <div class="rounded-l bg-gray-200/75 dark:bg-slate-800/50">
               <SmartImage :src="account.image" class="rounded-l h-24 w-24" />
             </div>
 
             <div
-              class="rounded-tr rounded-br flex h-full bg-gray-200/50 w-full pl-4 items-center dark:bg-neutral-800/75"
+              class="rounded-tr rounded-br flex h-full bg-gray-200/50 w-full pl-4 items-center dark:bg-slate-800/75"
             >
               <div>
                 <h3
-                  class="font-medium text-lg text-gray-900 dark:text-neutral-300"
+                  class="font-medium text-lg text-gray-900 dark:text-slate-300"
                 >
                   {{ account.name }}
                 </h3>
 
                 <span
                   v-if="account.revealed == true"
-                  class="text-gray-800 dark:text-neutral-500"
+                  class="text-gray-800 dark:text-slate-500"
                 >
                   {{ account.iban }}
                 </span>
 
                 <span
                   v-else
-                  class="cursor-pointer text-gray-800 dark:text-neutral-500 hover:underline"
+                  class="cursor-pointer text-gray-800 dark:text-slate-500 hover:underline"
                   @click="account.revealed = true"
                 >
                   Click to reveal

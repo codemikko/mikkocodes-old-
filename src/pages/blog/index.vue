@@ -1,3 +1,4 @@
+// TODO: proof read this again
 <script lang="ts">
 import Vue from "vue"
 
@@ -15,7 +16,7 @@ export default Vue.extend({
         linux: [] as Post[],
         rest: [] as Post[],
       },
-      categories: ["Discord", "Linux", "Eğitim", "Frontend", "Site"],
+      categories: ["Discord", "TailwindCSS", "Learning", "Frontend", "Site"],
       selectedCategory: "Discord",
     }
   },
@@ -65,9 +66,9 @@ export default Vue.extend({
     }
   },
   head() {
-    const title = "EGGSY's Blog"
+    const title = "Mikko's Blog"
     const description =
-      "EGGSY'nin günlük hayattan, tecrübelerinden bahsettiği, göstermek veya anlatmak istediği şeyleri daha düzenli ve profesyonel bir şekilde tuttuğu blog sayfası."
+      "Mikkos's blog page where he talks about his daily life, experiences, and what he wants to show or tell in a more organized and professional way."
 
     return {
       title: "Blog",
@@ -210,12 +211,12 @@ export default Vue.extend({
           <div
             v-for="text in categories"
             :key="text"
-            class="rounded-lg cursor-pointer py-1 px-6 transition-colors text-gray-600 select-none dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-800"
+            class="rounded-lg cursor-pointer py-1 px-6 transition-colors text-gray-600 select-none dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800"
             :class="
-              selectedCategory === text && 'bg-gray-100 dark:bg-neutral-800'
+              selectedCategory === text && 'bg-gray-100 dark:bg-slate-800'
             "
             :title="
-              selectedCategory === text ? `Tüm ${text} gönderilirini gör` : ''
+              selectedCategory === text ? `All ${text} see your post` : ''
             "
             @click="
               selectedCategory !== text
@@ -240,7 +241,7 @@ export default Vue.extend({
       </div>
 
       <div class="mt-16">
-        <Title> Tüm gönderiler </Title>
+        <Title> All posts </Title>
 
         <div class="mt-4 grid gap-3 md:grid-cols-3">
           <template v-if="isFetchPending">
@@ -250,7 +251,7 @@ export default Vue.extend({
           <template v-else>
             <CardPost
               v-for="(post, index) in getPaginatedPosts"
-              :key="`linux-${index}`"
+              :key="`tailwindcss-${index}`"
               :post="post"
               type="text-only-title"
             />
@@ -261,9 +262,9 @@ export default Vue.extend({
           <div
             v-for="page in getTotalPages"
             :key="`pagination-${page}`"
-            class="rounded-full cursor-pointer flex font-medium bg-gray-200 h-10 transition-colors ring-1 ring-gray-300 text-gray-900 w-10 items-center justify-center select-none dark:(bg-neutral-800 ring-neutral-800 text-gray-100 hover:bg-neutral-700) hover:bg-gray-300"
+            class="rounded-full cursor-pointer flex font-medium bg-gray-200 h-10 transition-colors ring-1 ring-gray-300 text-gray-900 w-10 items-center justify-center select-none dark:(bg-slate-800 ring-slate-800 text-gray-100 hover:bg-slate-700) hover:bg-gray-300"
             :class="{
-              'bg-gray-300 dark:bg-neutral-700': pagination + 1 === page,
+              'bg-gray-300 dark:bg-slate-700': pagination + 1 === page,
             }"
             @click="pagination = page - 1"
           >
@@ -281,21 +282,21 @@ export default Vue.extend({
         <h1
           class="font-semibold px-4 text-2xl text-gray-900 md:text-4xl dark:text-gray-100"
         >
-          Aramanıza uygun herhangi bir gönderi bulunamadı.
+          No posts matching your search were found.
         </h1>
 
         <div class="px-4 md:w-4/6">
           <h3 class="text-lg text-gray-900 dark:text-gray-100">
-            Deneyebileceğiniz yöntemler:
+            Methods you can try:
           </h3>
 
           <ul class="list-disc pl-4 text-gray-700 dark:text-gray-300">
-            <li>Aramanızda anahtar kelimeler kullanmayı deneyin.</li>
-            <li>Etiketler kullanmayı deneyin.</li>
-            <li>
-              Gönderinin başlığında veya açıklamasında olan kelimelerle arama
-              yapmayı deneyin.
-            </li>
+            <li>Try using keywords in your search.</li>
+               <li>Try using tags.</li>
+               <li>
+                 Search by words in the title or description of the post
+                 try to do it.
+               </li>
           </ul>
         </div>
 
@@ -304,12 +305,12 @@ export default Vue.extend({
             <IconHome class="h-6 w-6" />
           </template>
 
-          <span>Bloga Dön</span>
+          <span>Back to the Blog</span>
         </Button>
       </div>
 
       <div v-else class="space-y-2 mt-8">
-        <Title>Arama sonuçları:</Title>
+        <Title>Search Results:</Title>
 
         <div class="space-y-2">
           <CardPost

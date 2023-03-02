@@ -1,3 +1,4 @@
+<!-- TODO: Start HERE -->
 <script lang="ts">
 import Vue from "vue"
 
@@ -193,12 +194,12 @@ export default Vue.extend({
           <header class="space-y-4 text-center mb-12 sm:(text-left pr-16)">
             <div class="space-y-2">
               <h1
-                class="font-bold text-2xl text-gray-700 block sm:text-4xl dark:text-neutral-300"
+                class="font-bold text-2xl text-gray-700 block sm:text-4xl dark:text-slate-300"
               >
                 {{ post.title }}
               </h1>
 
-              <p class="text-neutral-500">{{ post.description }}</p>
+              <p class="text-slate-500">{{ post.description }}</p>
             </div>
           </header>
 
@@ -307,7 +308,7 @@ export default Vue.extend({
 
     &:hover {
       a .icon.icon-link {
-        @apply text-neutral-500 hover:text-neutral-200;
+        @apply text-slate-500 hover:text-slate-200;
 
         &::before {
           content: "#";
@@ -356,7 +357,7 @@ export default Vue.extend({
 
   /* Block quotes */
   blockquote {
-    @apply rounded-md bg-gray-100 ml-0 w-full py-2 px-4 md:w-max dark:bg-neutral-800;
+    @apply rounded-md bg-gray-100 ml-0 w-full py-2 px-4 md:w-max dark:bg-slate-800;
   }
 
   /* Smart image */
@@ -429,7 +430,7 @@ export default Vue.extend({
 
   /* Keyboard */
   kbd {
-    @apply rounded-lg cursor-pointer bg-neutral-300 py-1 px-2 transition-colors text-neutral-600 select-none dark:(bg-neutral-800 text-neutral-400 hover:bg-neutral-700) hover:bg-neutral-200;
+    @apply rounded-lg cursor-pointer bg-slate-300 py-1 px-2 transition-colors text-slate-600 select-none dark:(bg-slate-800 text-slate-400 hover:bg-slate-700) hover:bg-slate-200;
   }
 
   /* Video */

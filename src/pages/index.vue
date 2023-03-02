@@ -1,3 +1,5 @@
+<!-- TODO: Fix this page -->
+
 <script lang="ts">
 import Vue from "vue"
 
@@ -253,13 +255,13 @@ export default Vue.extend({
       <div class="md:w-8/12">
         <div class="space-y-2">
           <div
-            class="font-semibold text-xl text-neutral-700 md:text-3xl dark:text-neutral-200"
+            class="font-semibold text-xl text-slate-700 md:text-3xl dark:text-slate-200"
           >
             <h1>Self taught</h1>
             <h1>
               <SmartLink
                 href="https://www.w3schools.com/whatis/whatis_fullstack_js.asp"
-                class="cursor-help border-b-2 border-blue-700 text-blue-700 dark:border-neutral-500 dark:text-neutral-500"
+                class="cursor-help border-b-2 border-blue-700 text-blue-700 dark:border-slate-500 dark:text-slate-500"
                 blank
                 >Full-stack</SmartLink
               >
@@ -267,7 +269,7 @@ export default Vue.extend({
             </h1>
           </div>
 
-          <p class="text-neutral-500">
+          <p class="text-slate-500">
             Hi there, my name is Abdulbaki, I am from Turkey and I am a self
             taught web developer. I build complex web apps using frameworks such
             as
@@ -349,7 +351,7 @@ export default Vue.extend({
           <template v-if="project.icon" #icon>
             <IconDev
               :brand="project.icon"
-              class="rounded-full bg-gray-100 h-14 p-2 text-neutral-500 w-14 dark:(bg-neutral-800 text-white)"
+              class="rounded-full bg-gray-100 h-14 p-2 text-slate-500 w-14 dark:(bg-slate-800 text-white)"
             />
           </template>
         </Card>
@@ -364,7 +366,7 @@ export default Vue.extend({
         <div class="flex items-center gap-4 justify-between">
           <Title>Experience</Title>
           <button
-            class="text-gray-400 mr-4 text-sm hover:underline dark:text-neutral-700"
+            class="text-gray-400 mr-4 text-sm hover:underline dark:text-slate-700"
             @click="showExtraExperience = !showExtraExperience"
           >
             {{ showExtraExperience ? "show less" : "show more" }}
@@ -388,7 +390,7 @@ export default Vue.extend({
         <div class="flex items-center gap-4 justify-between">
           <Title>Education</Title>
           <button
-            class="text-gray-400 mr-4 text-sm hover:underline dark:text-neutral-700"
+            class="text-gray-400 mr-4 text-sm hover:underline dark:text-slate-700"
             @click="showExtraExperience = !showExtraExperience"
           >
             {{ showExtraExperience ? "show less" : "show more" }}
@@ -415,7 +417,7 @@ export default Vue.extend({
       <div class="flex flex-col space-y-6 mt-8">
         <section v-for="category in skills" :key="category.title">
           <h5
-            class="border-b border-gray-400/10 dark:border-neutral-600/10 text-gray-400 dark:text-neutral-600/70 text-lg mx-4 mb-4 pb-2 font-medium"
+            class="border-b border-gray-400/10 dark:border-slate-600/10 text-gray-400 dark:text-slate-600/70 text-lg mx-4 mb-4 pb-2 font-medium"
           >
             {{ category.title }}
           </h5>
@@ -437,6 +439,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .description-link {
-  @apply border-neutral-500 border-b-2 border-opacity-50 hover:border-opacity-75;
+  @apply border-slate-500 border-b-2 border-opacity-50 hover:border-opacity-75;
 }
 </style>

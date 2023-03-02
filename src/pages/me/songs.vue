@@ -44,7 +44,7 @@ export default Vue.extend({
   async fetch() {
     const url =
       process.env.NODE_ENV === "production"
-        ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs"
+        ? "https://mikko.codes/.netlify/functions/getLastFmSongs"
         : "http://localhost:9999/.netlify/functions/getLastFmSongs"
 
     const { data: songs }: { data: LastFmResponse } = await this.$axios(url)
@@ -68,9 +68,9 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="text-gray-500 dark:text-neutral-600">
+  <div class="text-gray-500 dark:text-slate-600">
     <header class="space-y-2 my-12 px-4">
-      <h1 class="text-gray-900 text-4xl dark:text-neutral-300">Songs</h1>
+      <h1 class="text-gray-900 text-4xl dark:text-slate-300">Songs</h1>
       <p>
         My latest activity on Last FM. Don't forget to check out my
         <SmartLink href="/daily" class="underline"
@@ -95,7 +95,7 @@ export default Vue.extend({
 
             <div class="flex space-x-2 items-center">
               <SmartLink
-                href="https://last.fm/user/eggsywashere"
+                href="https://last.fm/user/hellomikko"
                 class="flex-shrink-0"
                 blank
                 >@{{ lastFm.user.name }}</SmartLink

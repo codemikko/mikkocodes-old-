@@ -35,7 +35,7 @@ export default Vue.extend({
     const title = "Song Recommendations"
     const description =
       "Looking for someone else's song recommendations? Here it is! I built a system just for you: Fresh, new songs every day!"
-    const image = "https://eggsy.xyz/assets/meta/images/daily.jpg"
+    const image = "https://mikko.codes/assets/meta/images/daily.jpg"
 
     return {
       title,
@@ -44,12 +44,12 @@ export default Vue.extend({
         description,
         image,
         keywords: "daily, song, recommendation",
-        url: "https://eggsy.xyz/daily",
+        url: "https://mikko.codes/daily",
       }),
       link: [
         {
           rel: "canonical",
-          href: "https://eggsy.xyz/daily",
+          href: "https://mikko.codes/daily",
         },
       ],
     }
@@ -62,7 +62,7 @@ export default Vue.extend({
       const { url, spotifyUrl } = this.selected
 
       return {
-        youtube: url || "ZY3J3Y_OU0w",
+        youtube: url || "Y4GbXznMh40",
         spotify: spotifyUrl || null,
       }
     },
@@ -140,13 +140,13 @@ export default Vue.extend({
 
         <div class="space-y-2 w-full">
           <div
-            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-neutral-800/40"
+            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-slate-800/40"
           >
             <Title :padding="false"> Title </Title>
 
             <SkeletonLoader
               v-if="$fetchState.pending || $fetchState.error"
-              class="bg-gray-300 h-6 w-2/4 dark:bg-neutral-700"
+              class="bg-gray-300 h-6 w-2/4 dark:bg-slate-700"
             />
 
             <span v-else class="text-gray-700 truncate dark:text-gray-300">{{
@@ -155,13 +155,13 @@ export default Vue.extend({
           </div>
 
           <div
-            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-neutral-800/40"
+            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-slate-800/40"
           >
             <Title :padding="false"> Artist </Title>
 
             <SkeletonLoader
               v-if="$fetchState.pending || $fetchState.error"
-              class="bg-gray-300 h-6 w-1/4 dark:bg-neutral-700"
+              class="bg-gray-300 h-6 w-1/4 dark:bg-slate-700"
             />
 
             <span v-else class="text-gray-700 truncate dark:text-gray-300">{{
@@ -170,13 +170,13 @@ export default Vue.extend({
           </div>
 
           <div
-            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-neutral-800/40"
+            class="rounded-md bg-gray-200/40 p-4 truncate dark:bg-slate-800/40"
           >
             <Title :padding="false"> Date </Title>
 
             <SkeletonLoader
               v-if="$fetchState.pending || $fetchState.error"
-              class="bg-gray-300 h-6 w-2/4 dark:bg-neutral-700"
+              class="bg-gray-300 h-6 w-2/4 dark:bg-slate-700"
             />
 
             <span v-else class="text-gray-700 truncate dark:text-gray-300">{{
