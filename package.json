@@ -2,28 +2,28 @@
   "private": true,
   "license": "MIT",
   "version": "5.0.0",
-  "homepage": "https://eggsy.xyz",
-  "readme": "https://github.com/eggsy/website#readme",
+  "homepage": "https://mikko.codes",
+  "readme": "https://github.com/codemikko/mikkocodes#readme",
   "engines": {
     "node": ">=16.9"
   },
   "author": {
-    "name": "Abdulbaki Dursun",
-    "email": "eggsydev@gmail.com",
-    "url": "https://eggsy.xyz"
+    "name": "Michael Moore",
+    "email": "ymikko@proton.me",
+    "url": "https://mikko.codes"
   },
   "bugs": {
-    "email": "eggsydev@gmail.com",
-    "url": "https://github.com/eggsy/website/issues"
+    "email": "ymikko@proton.me",
+    "url": "https://github.com/codemikko/mikkocodes/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eggsy/website.git"
+    "url": "https://github.com/codemikko/mikkocodes.git"
   },
   "funding": [
     {
       "type": "individual",
-      "url": "https://eggsy.xyz/donate"
+      "url": "https://mikko.codes/donate"
     },
     {
       "type": "github",
