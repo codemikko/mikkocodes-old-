@@ -1,4 +1,3 @@
-// TODO: proof read this again
 <script lang="ts">
 import Vue from "vue"
 
@@ -35,7 +34,7 @@ export default Vue.extend({
       .fetch()
 
     const linuxPosts: Post[] = await this.$content("blog")
-      .where({ tags: { $contains: "linux" } })
+      .where({ tags: { $contains: "tailwindcss" } })
       .sortBy("createdAt", "desc")
       .limit(3)
       .without(["body"])
@@ -189,7 +188,7 @@ export default Vue.extend({
 <template>
   <div class="pt-6">
     <div v-if="getFilteredPosts === false">
-      <Title> Son gönderiler </Title>
+      <Title> Latest posts</Title>
 
       <div class="mt-2 grid px-4 gap-4 md:grid-cols-3">
         <template v-if="isFetchPending">
