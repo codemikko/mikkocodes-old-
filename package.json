@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "license": "MIT",
   "version": "5.0.0",
   "homepage": "https://mikko.codes",
