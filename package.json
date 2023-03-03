@@ -50,6 +50,8 @@
     "@vue/runtime-dom": "^3.2.47",
     "core-js": "^3.28.0",
     "firebase": "^9.17.1",
+    "glob-parent": "^6.0.2",
+    "jsonwebtoken": "^9.0.0",
     "lastfm-typed": "^2.1.0",
     "moment-timezone": "^0.5.41",
     "nuxt": "^2.16.1",
