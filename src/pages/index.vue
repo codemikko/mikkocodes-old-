@@ -232,7 +232,7 @@ export default Vue.extend({
 
       <div class="rounded-full mb-4 md:mb-0">
         <SmartImage
-          src="/assets/images/avatar2.png"
+          src="/assets/images/avatar.png"
           class="rounded-full h-30 w-30 md:h-40 md:w-40"
         />
       </div>

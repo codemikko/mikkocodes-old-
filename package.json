@@ -38,6 +38,7 @@
     "verBuild": "vercel deploy",
     "verPull": "vercel pull",
     "verDeploy": "vercel --prod",
+    "netBuild": "netlify build",
     "netDeploy": "netlify deploy --prod"
   },
   "dependencies": {
