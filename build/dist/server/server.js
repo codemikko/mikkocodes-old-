@@ -6068,7 +6068,7 @@ var external_vue_disqus_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 external_vue_default.a.use(external_vue_disqus_default.a, {
-  shortname: "eggsy-xyz"
+  shortname: "hellomikko"
 });
 // EXTERNAL MODULE: external "moment-timezone"
 var external_moment_timezone_ = __webpack_require__(31);

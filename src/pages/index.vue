@@ -57,58 +57,6 @@ export default Vue.extend({
             position: "Student",
             date: "2021-"
           },
-          // {
-          //   title: "EskiYeni Academy Theater",
-          //   url: "https://eskiyenitiyatro.com",
-          //   position: "Web Developer & Social Media Manager",
-          //   date: "2022-",
-          // },
-          // {
-          //   title: "Discord Templates",
-          //   url: "https://discords.com/templates",
-          //   position: "Web Developer & Co-Founder",
-          //   date: "2020-2021",
-          // },
-          // {
-          //   title: "IZM Game Studios",
-          //   url: "https://izmgamestudios.com",
-          //   position: "Solution Partner",
-          //   date: "2020-2021",
-          //   isHidden: true,
-          // },
-          // {
-          //   title: "TruckersMP",
-          //   url: "https://truckersmp.com/user/1648033",
-          //   position: "Community Moderator & Translator",
-          //   date: "2020-2021",
-          //   isHidden: true,
-          // },
-          // {
-          //   title: "WA Web+ Extension",
-          //   url: "https://wawplus.com",
-          //   position: "Translator",
-          //   date: "2020-2021",
-          //   isHidden: true,
-          // },
-          // {
-          //   title: "Batakköylü Düğün Salonu",
-          //   url: "https://batakkoylu.netlify.app",
-          //   position: "Web Developer",
-          //   date: "2020-2020",
-          //   isHidden: true,
-          // },
-          // {
-          //   title: "EGGSY's Discord Bot",
-          //   url: "https://top.gg/bot/eggsy",
-          //   position: "Creator, Developer and Maintainer",
-          //   date: "2017-2019",
-          // },
-          // {
-          //   title: "Discord Bot List",
-          //   url: "https://top.gg/user/162969778699501569",
-          //   position: "Website Moderator",
-          //   date: "2017-2018",
-          // },
         ],
         education: [
           {
@@ -130,12 +78,6 @@ export default Vue.extend({
             date: "2014-2016",
             isHidden: false,
           },
-          // {
-          //   title: "Adil Karaağaç MTAL",
-          //   url: "https://akatl.meb.k12.tr/",
-          //   position: "Automation Systems",
-          //   date: "2014-2018",
-          // },
         ],
       } as ExperienceObject,
       cards: {
@@ -163,7 +105,7 @@ export default Vue.extend({
           {
             title: "Blog",
             description:
-              "My Turkish stories about real-life, programming, development and more!",
+              "My adventures, programming, development and more!",
             href: "/blog",
           },
           {
@@ -202,11 +144,6 @@ export default Vue.extend({
               color: "#0165A920",
             },
             {
-              title: "Raycast",
-              color: "#FF515A20",
-              image: "https://i.imgur.com/NBc0C4j.png",
-            },
-            {
               title: "Figma",
               color: "#F24E1E10",
             },
@@ -228,6 +165,11 @@ export default Vue.extend({
               title: "Netlify",
               iconPack: "IconBrand",
               color: "#00C7B720",
+            },
+             {
+              title: "Vercel",
+              iconPack: "IconBrand",
+              color: "#1B1B1B",
             },
           ],
         },
@@ -263,8 +205,8 @@ export default Vue.extend({
           </div>
 
           <p class="text-slate-500">
-            Hi there, my name is Abdulbaki, I am from Turkey and I am a self
-            taught web developer. I build complex web apps using frameworks such
+            👋 Hi there, my name is Mikko, I am from Ft Liberty "aka" Ft Bragg, NC. As a self
+            taught web developer, I build complex web apps & components using frameworks such
             as
             <SmartLink href="https://vuejs.org/" class="description-link" blank
               >Vue.js</SmartLink
@@ -290,7 +232,7 @@ export default Vue.extend({
 
       <div class="rounded-full mb-4 md:mb-0">
         <SmartImage
-          src="/assets/images/memoji.png"
+          src="/assets/images/avatar2.png"
           class="rounded-full h-30 w-30 md:h-40 md:w-40"
         />
       </div>
@@ -327,7 +269,7 @@ export default Vue.extend({
     </section>
 
     <section id="projects">
-      <Title>Projects I currently work on</Title>
+      <Title>Projects I've Worked On</Title>
 
       <div class="mt-4 grid gap-2 md:(gap-4 grid-cols-2)">
         <Card

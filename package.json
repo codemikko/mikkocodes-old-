@@ -36,7 +36,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "verBuild": "vercel deploy",
-    "verPull": "vercel pull"
+    "verPull": "vercel pull",
+    "verDeploy": "vercel --prod",
+    "netDeploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@eggsydev/vue-lanyard": "^1.1.3",
