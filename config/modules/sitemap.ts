@@ -8,7 +8,7 @@ export default async function () {
   }
 
   return {
-    hostname: "https://eggsy.xyz",
+    hostname: "https://mikko.codes",
     gzip: true,
     routes,
   }

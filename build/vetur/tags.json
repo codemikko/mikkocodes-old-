@@ -179,12 +179,6 @@
   "LoadersSongs": {
     "description": "Auto imported from components/Loaders/Songs.vue"
   },
-  "NavbarBlog": {
-    "description": "Auto imported from components/Navbar/Blog.vue"
-  },
-  "NavbarDefault": {
-    "description": "Auto imported from components/Navbar/Default.vue"
-  },
   "SkeletonLoaderIframe": {
     "description": "Auto imported from components/SkeletonLoader/Iframe.vue"
   },
@@ -202,6 +196,12 @@
   },
   "SkeletonLoaderSpinner": {
     "description": "Auto imported from components/SkeletonLoader/Spinner.vue"
+  },
+  "NavbarBlog": {
+    "description": "Auto imported from components/Navbar/Blog.vue"
+  },
+  "NavbarDefault": {
+    "description": "Auto imported from components/Navbar/Default.vue"
   },
   "SmartImage": {
     "description": "Auto imported from components/Smart/Image.vue"

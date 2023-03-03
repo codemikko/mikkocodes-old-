@@ -1,5 +1,5 @@
 {
-  "title": "eggsy.xyz",
+  "title": "mikko.codes",
   "meta": [
     {
       "hid": "charset",
@@ -18,7 +18,7 @@
     {
       "hid": "apple-mobile-web-app-title",
       "name": "apple-mobile-web-app-title",
-      "content": "eggsy.xyz"
+      "content": "mikko.codes"
     },
     {
       "hid": "author",
@@ -40,13 +40,13 @@
       "hid": "og:title",
       "name": "og:title",
       "property": "og:title",
-      "content": "eggsy.xyz"
+      "content": "mikko.codes"
     },
     {
       "hid": "og:site_name",
       "name": "og:site_name",
       "property": "og:site_name",
-      "content": "eggsy.xyz"
+      "content": "mikko.codes"
     }
   ],
   "link": [
@@ -63,7 +63,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.ac64e1db.json",
+      "href": "/_nuxt/manifest.db377678.json",
       "hid": "manifest"
     }
   ],

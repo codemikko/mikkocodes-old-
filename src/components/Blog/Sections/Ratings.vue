@@ -6,16 +6,16 @@ export default Vue.extend({
     return {
       ratings: [
         {
-          name: "Daredevil",
+          name: "Nicky Jam: El Gandor",
           rating: 10,
           platform: "Netflix",
-          anchor: "#daredevil",
+          anchor: "#nickyjam",
         },
         {
-          name: "Prison Break",
+          name: "Narcos",
           rating: 10,
-          platform: "Fox",
-          anchor: "#prison-break",
+          platform: "Netflix",
+          anchor: "#narcos",
         },
         {
           name: "Arcane",
@@ -31,10 +31,10 @@ export default Vue.extend({
           anchor: "#love-death--robots",
         },
         {
-          name: "Élite",
+          name: "Queen of the South",
           rating: 9.5,
           platform: "Netflix",
-          anchor: "#élite",
+          anchor: "#queenofthesouth",
         },
         {
           name: "The Witcher",
@@ -61,40 +61,40 @@ export default Vue.extend({
           anchor: "#the-mandalorian",
         },
         {
-          name: "La Casa de Papel",
+          name: "The Woman King",
           rating: 9.5,
           platform: "Netflix",
-          anchor: "#la-casa-de-papel",
+          anchor: "#thewomanking",
         },
         {
-          name: "Sex Education",
+          name: "Naro: Saints",
+          rating: 10,
+          platform: "Netflix",
+          anchor: "#narcosaints",
+        },
+        {
+          name: "Ottoman: Mehmed vs Vlad",
           rating: 9,
           platform: "Netflix",
-          anchor: "#sex-education",
+          anchor: "#ottoman",
         },
         {
-          name: "Locke & Key",
+          name: "Blacklist",
+          rating: 9.5,
+          platform: "Netflix",
+          anchor: "#blacklist",
+        },
+        {
+          name: "Barbarians",
           rating: 9,
           platform: "Netflix",
-          anchor: "#locke--key",
+          anchor: "#barbarians",
         },
         {
-          name: "Stranger Things",
-          rating: 9,
+          name: "Barbarians II",
+          rating: 10,
           platform: "Netflix",
-          anchor: "#stranger-things",
-        },
-        {
-          name: "See",
-          rating: 9,
-          platform: "Apple TV+",
-          anchor: "#see",
-        },
-        {
-          name: "Sherlock",
-          rating: 9,
-          platform: "BBC",
-          anchor: "#sherlock",
+          anchor: "#barbarians2",
         },
         {
           name: "Loki",

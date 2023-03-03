@@ -12,7 +12,7 @@ export default Vue.extend({
       posts: {
         latest: [] as Post[],
         discord: [] as Post[],
-        linux: [] as Post[],
+        tailwindcss: [] as Post[],
         rest: [] as Post[],
       },
       categories: ["Discord", "TailwindCSS", "Learning", "Frontend", "Site"],
@@ -33,7 +33,7 @@ export default Vue.extend({
       .without(["body"])
       .fetch()
 
-    const linuxPosts: Post[] = await this.$content("blog")
+    const tailwindcssPosts: Post[] = await this.$content("blog")
       .where({ tags: { $contains: "tailwindcss" } })
       .sortBy("createdAt", "desc")
       .limit(3)
@@ -52,7 +52,7 @@ export default Vue.extend({
 
       if (
         discordPosts.findIndex(findFilter) !== -1 ||
-        linuxPosts.findIndex(findFilter) !== -1
+        tailwindcssPosts.findIndex(findFilter) !== -1
       )
         allPosts = allPosts.filter((item: Post) => item.slug !== post.slug)
     }
@@ -60,7 +60,7 @@ export default Vue.extend({
     this.posts = {
       latest: latestPosts || [],
       discord: discordPosts || [],
-      linux: linuxPosts || [],
+      tailwindcss: tailwindcssPosts || [],
       rest: allPosts || [],
     }
   },
@@ -81,7 +81,7 @@ export default Vue.extend({
     getCategoryResults(): Post[] {
       const { posts } = this
 
-      const allPosts = posts.rest.concat(posts.discord, posts.linux)
+      const allPosts = posts.rest.concat(posts.discord, posts.tailwindcss)
 
       const filtered = allPosts.filter((post: Post) =>
         post?.tags?.includes(this.selectedCategory?.toLowerCase())
@@ -124,8 +124,8 @@ export default Vue.extend({
       sorgu = sorgu?.toLowerCase()
       etiket = etiket?.toLowerCase()
 
-      const { latest, discord, linux, rest } = this.posts
-      const allPosts = [...latest, ...discord, ...linux, ...rest]
+      const { latest, discord, tailwindcss, rest } = this.posts
+      const allPosts = [...latest, ...discord, ...tailwindcss, ...rest]
 
       if (etiket)
         return allPosts.filter(
@@ -314,7 +314,7 @@ export default Vue.extend({
         <div class="space-y-2">
           <CardPost
             v-for="(post, index) in getFilteredPosts"
-            :key="`linux-${index}`"
+            :key="`tailwindcss-${index}`"
             :post="post"
             type="text"
           />

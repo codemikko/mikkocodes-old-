@@ -1,5 +1,5 @@
 const Feed = () => {
-  const baseUrlArticles = "https://eggsy.xyz/blog"
+  const baseUrlArticles = "https://mikko.codes/blog"
 
   const feedFormats = {
     rss: { type: "rss2", file: "rss.xml" },
@@ -10,9 +10,9 @@ const Feed = () => {
 
   const createFeedArticles = async function (feed: any) {
     feed.options = {
-      title: "EGGSY's Blog",
+      title: "Mikko's Blog",
       description:
-        "EGGSY'nin günlük hayattan, tecrübelerinden bahsettiği, göstermek veya anlatmak istediği şeyleri daha düzenli ve profesyonel bir şekilde tuttuğu blog sayfası.",
+        "Mikko's blog page where he talks about his daily life, experiences, and what he wants to show or tell in a more organized and professional way.",
       link: baseUrlArticles,
     }
 
@@ -23,7 +23,7 @@ const Feed = () => {
 
       const hostName =
         process.env.NODE_ENV === "production"
-          ? "https://eggsy.xyz"
+          ? "https://mikko.codes"
           : "http://localhost:3000"
 
       const postImagesPath = `${hostName}/assets/images/posts`

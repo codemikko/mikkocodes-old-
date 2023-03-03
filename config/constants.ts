@@ -1,25 +1,25 @@
 export default {
   social: {
-    discord: "https://discord.gg/rpvNmR9cP9",
-    twitter: "https://twitter.com/eggsydev/",
-    github: "https://github.com/eggsy/",
-    linkedIn: "https://linkedin.com/in/abdulbaki-dursun",
-    instagram: "https://instagram.com/eggsy_dev/",
-    trello: "https://trello.com/b/XtWZFFiH/",
-    email: "eggsydev@gmail.com",
+    discord: "https://reflinked.mikko.codes/2bFQkgeAab",
+    twitter: "https://reflinked.mikko.codes/twitter",
+    github: "https://reflinked.mikko.codes/github",
+    linkedIn: "https://reflinked.mikko.codes/linkedin",
+    instagram: "https://reflinked.mikko.codes/instagram",
+    notion: "https://reflinked.mikko.codes/notion",
+    email: "https://reflinked.mikko.codes/proton-safeOn",
   },
   sponsor: {
-    github: "https://github.com/sponsors/eggsy",
+    github: "https://github.com/sponsors/codemikko",
   },
   links: {
-    unblockPlease: {
-      webstore:
-        "https://chrome.google.com/webstore/detail/unblock-please/lpngbkmgnehdkkobdbieckjpphkohffd/",
-      github: "https://github.com/eggsy/unblock-please/",
-    },
-    isInsideMe: {
-      website: "https://is-inside.me/",
-      faq: "https://is-inside.me/faq/",
-    },
+    // unblockPlease: {
+    //   webstore:
+    //     "https://chrome.google.com/webstore/detail/unblock-please/lpngbkmgnehdkkobdbieckjpphkohffd/",
+    //   github: "https://github.com/eggsy/unblock-please/",
+    // },
+    // isInsideMe: {
+    //   website: "https://is-inside.me/",
+    //   faq: "https://is-inside.me/faq/",
+    // },
   },
 }

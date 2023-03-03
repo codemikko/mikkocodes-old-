@@ -1,4 +1,3 @@
-<!-- TODO: Start HERE -->
 <script lang="ts">
 import Vue from "vue"
 
@@ -53,10 +52,10 @@ export default Vue.extend({
 
     const title = post.title
     const description =
-      post.description || "EGGSY'nin blogunda bu yazıyı okumaya davet edildin."
+      post.description || "You were invited to read this post on Mikko's blog."
 
     const tags = getTags?.join(", ") || title
-    const href = `https://eggsy.xyz${this.$route?.path}`
+    const href = `https://mikko.codes${this.$route?.path}`
     const image = `/og-images/${post.slug}.png`
 
     return {
@@ -75,7 +74,7 @@ export default Vue.extend({
           title,
           description,
           image,
-          keywords: `${tags}, eggsy blog, blog, teknoloji, vue, yazılım, discord, eggsys`,
+          keywords: `${tags}, mikkos blog, blog, technology, vue, software, discord, tailwindcss`,
           url: href,
         },
         [
@@ -89,7 +88,7 @@ export default Vue.extend({
           },
           {
             name: "twitter:label1",
-            content: "Tarih",
+            content: "History",
           },
           {
             name: "twitter:data1",
@@ -97,11 +96,11 @@ export default Vue.extend({
           },
           {
             name: "twitter:label2",
-            content: "Okuma Süresi",
+            content: "Reading Time",
           },
           {
             name: "twitter:data2",
-            content: `${this.getReadingTime} dakika`,
+            content: `${this.getReadingTime} minute`,
           },
         ]
       ),
@@ -142,8 +141,8 @@ export default Vue.extend({
      */
     getPostImage(): string {
       return this.post?.image
-        ? `https://eggsy.xyz/${this.post?.image}`
-        : `https://eggsy.xyz/assets/images/posts/${this.post?.slug}.jpg`
+        ? `https://mikko.codes/${this.post?.image}`
+        : `https://mikko.codes/assets/images/posts/${this.post?.slug}.jpg`
     },
   },
 })
@@ -177,7 +176,7 @@ export default Vue.extend({
               "
             >
               <IconClock class="h-4 w-4" />
-              <div>{{ getReadingTime }} dakika okuma</div>
+              <div>{{ getReadingTime }} minute reading</div>
             </div>
 
             <div
@@ -230,8 +229,8 @@ export default Vue.extend({
 
         <Disqus
           :title="post.title"
-          :url="`https://eggsy.xyz/blog/gonderi/${post.slug}`"
-          :identifier="`/blog/gonderi/${post.slug}`"
+          :url="`https://mikko.codes/blog/gonder/${post.slug}`"
+          :identifier="`/blog/gonder/${post.slug}`"
           :slug="post.slug"
           lang="tr"
           class="mt-10 px-4"
@@ -240,7 +239,7 @@ export default Vue.extend({
         <div class="space-y-12 mt-10 px-4">
           <!-- Related posts -->
           <div v-if="getRelatedPosts.length > 0" class="space-y-2">
-            <Title :padding="false">Benzer İçerikler</Title>
+            <Title :padding="false">Similar Content</Title>
 
             <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
               <CardPost
@@ -255,14 +254,14 @@ export default Vue.extend({
 
           <!-- Share -->
           <div class="space-y-2">
-            <Title :padding="false">Yazıyı paylaş</Title>
+            <Title :padding="false">Share the post</Title>
 
             <BlogShare :title="post.title" :path="$route.path" />
           </div>
 
           <!-- Tags -->
           <div v-if="getTags.length > 0" class="space-y-2">
-            <Title :padding="false" lang="tr">Etiketler</Title>
+            <Title :padding="false" lang="tr">labels</Title>
 
             <div class="flex flex-wrap space-x-2">
               <Button

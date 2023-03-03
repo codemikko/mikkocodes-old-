@@ -37,7 +37,7 @@ export default Vue.extend({
         twitter: "Follow me on Twitter!",
         github: "Follow me on GitHub!",
         instagram: "Follow me on Instagram!",
-        trello: "View my Trello board!",
+        notion: "View my Notion!",
         linkedIn: "Connect with me on LinkedIn!",
       }
 

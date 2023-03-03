@@ -1,12 +1,12 @@
 import { NuxtOptionsHead } from "@nuxt/types/config/head"
 
 /* Define constants */
-const image = "https://eggsy.xyz/icon.png"
+const image = "https://mikko.code/icon.png"
 const description =
-  "Young JavaScript developer from Turkey, interested in languages, gaming, and programming, trying to improve his JavaScript skills!"
+  "I am a skilled front-end developer hailing from the United States, with a passion for all things related to front-end development. I specialize in using cutting-edge technologies and frameworks such as Nuxt, Next, Tailwind, and Windcss to create visually stunning and highly functional web applications. My love for the craft drives me to constantly improve, my JavaScript skills, staying up-to-date with the latest developments and trends in the industry. I have a deep understanding of the importance of creating intuitive and user-friendly interfaces, and my work reflects my dedication to delivering the best possible user experience!"
 
 const Head: NuxtOptionsHead = {
-  title: "eggsy.xyz",
+  title: "mikko.code",
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -34,7 +34,7 @@ const Head: NuxtOptionsHead = {
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: "eggsy.xyz",
+      content: "mikko.code",
     },
     {
       hid: "twitter:description",
@@ -55,7 +55,7 @@ const Head: NuxtOptionsHead = {
     {
       hid: "og:site_name",
       name: "og:site_name",
-      content: "eggsy.xyz",
+      content: "mikko.code",
     },
     {
       hid: "og:description",
@@ -82,13 +82,13 @@ const Head: NuxtOptionsHead = {
     {
       rel: "icon",
       type: "image/x-icon",
-      href: "https://eggsy.xyz/assets/icons/icon.ico",
+      href: "https://mikko.code/assets/icons/icon.ico",
     },
     {
       rel: "search",
       type: "application/opensearchdescription+xml",
-      title: "EGGSY's Blog",
-      href: "https://eggsy.xyz/opensearch.xml",
+      title: "Mikko's Blog",
+      href: "https://mikko.code/opensearch.xml",
     },
   ],
 }

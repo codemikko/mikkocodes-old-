@@ -1,7 +1,7 @@
 export default {
   manifest: {
-    name: "eggsy.xyz",
-    short_name: "eggsy.xyz",
+    name: "mikko.codes",
+    short_name: "mikko.codes",
     theme_color: "#f56565",
     lang: "en",
   },

@@ -55,7 +55,7 @@ export default Vue.extend({
     <div class="space-y-2">
       <div :class="top && 'flex justify-between space-x-2'">
         <h3 class="text-gray-700 items-center truncate dark:text-slate-400">
-          <span class="text-gray-400 dark:text-slate-700">mikko/</span
+          <span class="text-gray-400 dark:text-slate-700">mikko</span
           >{{ name }}
         </h3>
 

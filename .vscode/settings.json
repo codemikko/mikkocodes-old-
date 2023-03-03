@@ -1,0 +1,32 @@
+{
+    "[markdown]": {
+        "editor.fontSize": 14,
+        "editor.lineHeight": 26,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 64,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": false,
+        "editor.minimap.enabled": false
+    },
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "Blog",
+            "path": "[[workspace]]/src/components/Blog",
+            "originalPath": "[[workspace]]/src/components/Blog"
+        },
+        {
+            "title": "Card",
+            "path": "[[workspace]]/src/components/Card",
+            "originalPath": "[[workspace]]/src/components/Card"
+        },
+        {
+            "title": "CommandPalette",
+            "path": "[[workspace]]/src/components/CommandPalette",
+            "originalPath": "[[workspace]]/src/components/CommandPalette"
+        },
+        {
+            "title": "blog",
+            "path": "[[workspace]]/src/content/blog"
+        }
+    ]
+}

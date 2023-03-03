@@ -75,7 +75,7 @@ export default Vue.extend({
         /* Quick Links */
         {
           title: "GitHub",
-          href: "https://github.com/codemikko",
+          href: "https://reflinked.mikko.codes/github",
           icon: "IconBrand",
           iconProps: {
             brand: "github",
@@ -84,7 +84,7 @@ export default Vue.extend({
         },
         {
           title: "Twitter",
-          href: "https://twitter.com/codemikko",
+          href: "https://reflinked.mikko.codes/twitter",
           icon: "IconBrand",
           iconProps: {
             brand: "twitter",
