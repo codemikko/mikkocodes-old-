@@ -1,4 +1,3 @@
-nta
 <script lang="ts">
 import Vue, { PropType } from "vue"
 

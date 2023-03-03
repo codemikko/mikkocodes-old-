@@ -30,7 +30,7 @@ export default Vue.extend({
 <template>
   <component
     :is="!['sm', 'xs'].includes(size) ? `h${size}` : 'h3'"
-    class="text-lg text-gray-400 dark:text-neutral-700"
+    class="text-lg text-gray-400 dark:text-slate-700"
     :class="{
       'px-4': padding === true,
       'text-2xl': size === '1',

@@ -4,7 +4,7 @@ import Vue from "vue"
 export default Vue.extend({
   computed: {
     /**
-     * Returns localized GitHub notice string in Turkish/English according to current route.
+     * Returns localized GitHub notice string in English according to current route.
      * @returns {string}
      */
     getLocalizedNotice(): string {
@@ -18,7 +18,7 @@ export default Vue.extend({
 
 <template>
   <div
-    class="bg-gray-200/50 w-full py-4 text-gray-900 dark:(bg-neutral-800 text-gray-200)"
+    class="bg-gray-200/50 w-full py-4 text-gray-900 dark:(bg-slate-800 text-gray-200)"
   >
     <div class="mx-auto px-4 w-11/12 sm:w-9/12 md:w-7/12">
       <div class="space-y-4 text-center sm:(space-y-0 space-x-6 text-left)">
