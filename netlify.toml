@@ -1,5 +1,5 @@
 [[redirects]]
 force = true
-from = "/blog/gonderi/:slug"
+from = "/blog/gonder/:slug"
 status = 301
 to = "/blog/:slug"
